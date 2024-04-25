@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Suhu</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <h1>Kalkulator Suhu</h1>
+        <p>Masukan suhu, pilih satuan suhu yang akan dikonversi, lau klik tombol Konversi untuk mendapatkan hasil konversi</p>
+        <br>
+        <div id="inputLabel" class="Input">Input</div>
+        <div class="calculator">
+            <input type="number" id="input" placeholder="Masukkan suhu dalam Celsius">
+            <select id="Unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <br>
+            <button onclick="convert()">Konversi</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        <br>
+        <div id="outputLabel" class="Output">Output:</div>
+        <div><span id="output" class="Output"></span></div>
+        <div id ="howLabel" class="Output">Cara Kalkulasi:</div>
+        <div><span id="calculationMethod" class="Output"></span></div>
+        <script src="../js/script.js"></script>
+        <br>
+        <br>
+        <hr>
+        <h2>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h2>
+        <p>Suhu S dalam derajat Fahrenheit sama dengan S dalam derajat Celsius kali 9/5 tambah 32.</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>S</mi><mo stretchy="false">(</mo><mi>°F</mi><mo stretchy="false">)</mo><mo>=</mo><mo>(</mo><mi>S</mi><mo stretchy="false">(</mo><mi>°C</mi><mo stretchy="false">)</mo><mo>&#x00D7;</mo><mfrac><mn>9</mn><mn>5</mn></mfrac><mo>)</mo><mo>+</mo><mn>32</mn>
+        </math>
+        <br>
+        <hr>
+        <h2>Cara Konversi Dari Fahrenheit (°F) ke Celsius (°C)</h2>
+        <p>Suhu S dalam derajat Celsius sama dengan S dalam derajat Fahrenheit kurang 32 kali 5/9</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>S</mi><mo stretchy="false">(</mo><mi>°C</mi><mo stretchy="false">)</mo><mo>=</mo><mo>(</mo><mi>S</mi><mo stretchy="false">(</mo><mi>°F</mi><mo stretchy="false">)</mo><mo>-</mo><mn>32</mn><mo>)</mo><mo>&#x00D7;</mo><mfrac><mn>5</mn><mn>9</mn></mfrac>
+        </math>
+    </body>
+    <footer>
+        <p>&copy; 2024 Christian Lukito Pangestu. All rights reserved. | <a href="https://github.com/ChristianPangestu" target="_blank">GitHub</a></p>
+    </footer>
+</html>
